@@ -21,9 +21,10 @@ body{
     background-color: #eec802;
 }
 
+
 .callout-container{
-    height: 100vh;
-    background: url("../img/whiskey-glass.jpg") no-repeat bottom right fixed; 
+    height: 120vh;
+    background: url("../img/whiskey-glass.jpg") no-repeat bottom right; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -35,6 +36,8 @@ body{
     
     position: relative;
 }
+
+
 
 .opaque-overlay{
     position: absolute;
@@ -121,7 +124,10 @@ body{
 }
 .jumbotron{
     background-color: transparent;
+    position: relative;
+    
 }
+
 .jumbotron small{
     font-size: 60%;
     font-style: italic;
@@ -168,4 +174,13 @@ feature i{
     font-weight: bold;
     margin-top: 10px;
     color: #f05f40;
+}
+
+@media (max-height:540px){
+  /*  .jumbotron{
+        margin-top: 4rem;
+    }*/
+    .callout-container{
+        height: 160vh;
+    }
 }
